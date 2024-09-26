@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://beo6mjryissgl"]
+
+[ext_resource type="PackedScene" uid="uid://ccdjbegxr8wbg" path="res://world.tscn" id="1_7tmk1"]
+[ext_resource type="PackedScene" uid="uid://2ydtf7d1nmk" path="res://door_draggable.tscn" id="3_mandx"]
+[ext_resource type="PackedScene" uid="uid://bbr241xdc36sh" path="res://jugador/character_body_3d.tscn" id="3_on47o"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_7tmk1")]
+
+[node name="Node3D2" parent="." instance=ExtResource("3_mandx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 21, 3.1, -2)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("3_on47o")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 23.8788, 2.53763, 3.33943)
